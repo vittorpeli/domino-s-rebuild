@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Domino's</title>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-home">Domino's Pizza</a>
+      <ul class="nav-links">
+        <li><a href="#container-menu" class="nav-menu">Cardápio</a></li>
+        <li><a href="#container-order" class="nav-order">Pedir Minha Pizza</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="bgimg">
+    <div class="hdr-txt">
+      <h1>A Melhor Massa!</h1>
+      <button class="hdr-btn" href="#container-order" id="openOrderModal">Faça seu Pedido</button>
+    </div>
+  </header>
+
+  <div id="container-order">
+    <div class="order-content">
+      <h1>Escolha Sua Forma de Entrega:</h1>
+      <div class="choice">
+        <button id="deliveryBtn">Delivery</button>
+        <span>Ou</span>
+        <button id="storeBtn">Buscar na Loja</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="container-menu">
+    <div class="menu-content">
+      <h1 id="card-h1">Cardápio</h1>
+      <div class="menu-card"> 
+        <a href="#pizza" class="menu-col" onclick="abrirCard('pizza')">
+          <div class="menu-food">Pizza</div>
+        </a>
+        <a href="#sanduiche" class="menu-col" onclick="abrirCard('sandu')">
+          <div class="menu-food">Sanduíches</div>
+        </a>
+        <a href="#acomp" class="menu-col" onclick="abrirCard('acomp')">
+          <div class="menu-food">Acompanhamentos</div>
+        </a>
+      </div>
+
+      <div id="pizza" class="food">
+        <h1><b>3 Queijos</b><span>R$12,50</span></h1>
+        <p>Queijo, requeijão, oregano e parmesão ralado.</p>
+        <hr>
+
+        <h1><b>Corn & Bacon</b><span>R$20,00</span></h1>
+        <p>Queijo, bacon, oregano e milho.</p>
+        <hr>
+
+        <h1><b>Calabresa</b><span>R$15,00</span></h1>
+        <p>Queijo, calabresa e cebola, oregano.</p>
+        <hr>
+
+        <h1><b>Margherita</b><span>R$12,50</span></h1>
+        <p>Queijo, tomate, oregano e manjericão.</p>
+        <hr>
+      </div>
+
+      <div class="food" id="sandu">
+        <h1><b>Chicken & Bacon</b><span>R$12,50</span></h1>
+        <p>Cream-cheese, bacon, frango grelhado, tomate, cebola, parmesão e azeite.</p>
+        <hr>
+
+        <h1><b>Frango com Quatro Queijos</b><span>R$16,00</span></h1>
+        <p>Queijo, Cream-cheese, frango grelhado, gorgonzola, parmesão e azeite.</p>
+        <hr>
+
+        <h1><b>Meat & Bacon</b><span>R$18,00</span></h1>
+        <p>Cream-cheese, pepperoni, presunto, calabresa, bacon e azeite.</p>
+        <hr>
+      </div>
+
+      <div class="food" id="acomp">
+        <h1><b>Cheesebread de Calabresa</b><span>R$6,00</span></h1>
+        <p>Queijo, calabresa, cebola, parmesão ralado, requeijão e azeite.</p>
+        <hr>
+
+        <h1><b>Cheesebread de 4 Queijos</b><span>R$8,00</span></h1>
+        <p>Queijo, gorgonzola, parmesão ralado, requeijão e azeite.</p>
+        <hr>
+
+        <h1><b>Cheesebread de Margherita</b><span>R$6,00</span></h1>
+        <p>Queijo, tomate, requeijão, parmesão ralado, azeite e manjericão.</p>
+        <hr>
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Faça seu Pedido</h2>
+
+      <form id="orderForm">
+
+        <label for="deliveryOption">Escolha a opção de entrega:</label>
+        <select id="deliveryOption" onchange="toggleAddressField()">
+        <option value="delivery">Delivery</option>
+        <option value="loja" selected>Buscar na Loja</option>
+        </select>
+
+        <p><input type="text" placeholder="Nome" required></p>
+        
+        <p><input type="text" placeholder="Item"></p>
+
+        <div id="addressField" style="display: none;">
+          <label for="address">Endereço de Entrega:</label>
+          <input type="text" id="address" name="address" placeholder="endereço">
+        </div>
+
+        <button type="submit">Concluir Pedido</button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="./modal.js"></script>
+  
+</body>
+</html>

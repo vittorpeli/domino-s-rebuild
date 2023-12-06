@@ -1,0 +1,367 @@
+:root {
+  /* Cores */
+  --color-blue: #006491;
+  --color-red: #e21737;
+  --color-white: #f6f6f6;
+
+  /* Tipografia */
+  --heading-font: "Segoe UI", sans-serif;
+  --body-font: "Merriweather", serif;
+
+  /* Estilos de Texto */
+  --heading-1: 2rem;
+  --heading-2: 1.8rem;
+  --heading-3: 1.5rem;
+  --body-text: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body,
+h4,
+p {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-blue);
+  font-size: var(--heading-1);
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--color-white);
+  text-align: center;
+  padding: 20px 16px;
+  font-size: var(--body-text);
+}
+
+.nav-inner {
+  display: flex;
+  flex-align: center;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+  margin: 0 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-inner a:hover {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-radius: 8px;
+}
+
+.nav-inner a.active {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.nav-inner a:active {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+/* Header */
+.bgimg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://classic.exame.com/wp-content/uploads/2021/11/Dominos-promocao-black-friday-1.jpg?quality=70&strip=info&w=1024");
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hdr-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px var(--color-red);
+  color: var(--color-white);
+  width: 100%;
+  text-align: center;
+}
+
+.hdr-txt h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.hdr-btn {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition-duration: 0.5s;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.hdr-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Order */
+#container-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    #dbdbdb;
+  padding: 16px;
+  height: 35vh;
+  text-align: center;
+}
+
+.order-content h1 {
+  color: var(--color-blue);
+}
+
+.choice {
+  padding: 8px 8px;
+  margin-top: 8px;
+}
+
+.choice button {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.choice button:hover {
+  background-color: hsla(0, 87%, 50%, 0.664);
+}
+
+.choice span {
+  font-size: var(--heading-2);
+  padding: 0 12px;
+}
+
+/* Menu */
+#container-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-blue);
+  height: 100%;
+}
+
+/* Menu Card */
+#card-h1 {
+  color: var(--color-white);
+  text-align: center;
+  text-shadow: 3px 3px #665b5b;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a9a9a9;
+  padding: 0 24px;
+}
+
+.menu-col {
+  flex: 0 0 33.333%;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  margin: 0 auto;
+}
+
+.menu-food {
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: var(--heading-font);
+  font-size: var(--body-font);
+  border: 1px solid transparent;
+}
+
+.menu-food:hover {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-red);
+}
+
+.menu-food:active,
+.menu-food:focus {
+  background-color: #ff5733;
+  color: var(--color-white);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ff5733;
+}
+
+/* Food Options */
+.food {
+  padding: 32px;
+  background-color: var(--color-white);
+  font-size: var(--body-font);
+}
+
+.food h1 {
+  font-size: 1.5rem;
+}
+
+.food span {
+  float: right;
+  background-color: #0d88bc;
+  color: var(--color-white);
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.food span:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--color-white);
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 31.25rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content span {
+  float: right;
+}
+
+.close {
+  color: #aaa;
+  font-weight: bold;
+  font-size: var(--body-font);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form button {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 16px 20px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+form button:hover {
+  background-color: hsla(0, 87%, 50%, 0.664);
+}
+
+#orderForm input {
+  padding: 16px;
+  border: 1px solid #ccc;
+}
+
+#orderForm label,
+#orderForm select {
+  font-style: var(--heading-font);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+select {
+  padding: 0.19rem;
+  box-shadow: 3px 3px 5px grey;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  width: 12rem;
+}
+
+#adressField {
+  text-align: left;
+  margin-top: 0.9rem;
+}
