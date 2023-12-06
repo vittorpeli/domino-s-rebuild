@@ -5,3 +5,8 @@ O objetivo desse projeto foi reforçar alguns fundamentos básicos de HTML, CSS 
 Além disso adicionei um modal na hora do pedido. A tentativa foi imaginar uma modernização da página da Domino's.
 
 <img width="942" alt="Captura de tela 2023-12-05 153256" src="https://github.com/vittorpeli/domino-s-rebuild/assets/58227840/2dcbeaa8-2252-405f-a82d-ff62f1bf424a">
+
+**DEMO**
+https://github.com/vittorpeli/domino-s-rebuild/assets/58227840/07efa5e5-d2ff-41f7-8868-72a5d8b5a88e
+
+
