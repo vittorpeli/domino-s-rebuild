@@ -8,5 +8,4 @@ Além disso adicionei um modal na hora do pedido. A tentativa foi imaginar uma m
 
 **DEMO**
 https://github.com/vittorpeli/domino-s-rebuild/assets/58227840/07efa5e5-d2ff-41f7-8868-72a5d8b5a88e
-
-
+![Dominos  edited  ‐ Feito com o Clipchamp (1)](https://github.com/vittorpeli/domino-s-rebuild/assets/58227840/51997f60-99f5-4084-9982-1f32597fc852)
